@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/background">
+	
+    
+    <com.qiang.testspecialview.SpecailView
+        android:id="@+id/specail_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">   
+    </com.qiang.testspecialview.SpecailView>
+    
+	<fragment android:name="com.qiang.testspecialview.FragmentTurnBar"
+        android:id="@+id/framentturn"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true">
+    </fragment>
+    <fragment android:name="com.qiang.testspecialview.FragmentEditBar"
+        android:id="@+id/framentmapedit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+    </fragment>
+
+    <com.qiang.testspecialview.MyButton
+        android:id="@+id/bt_endturn"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/framentturn"
+        android:layout_alignParentRight="true"
+        android:text="End Turn" />
+	
+</RelativeLayout>
